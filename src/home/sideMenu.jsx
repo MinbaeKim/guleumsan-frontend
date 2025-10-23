@@ -46,10 +46,10 @@ function SideMenu({isOpen}){
                                 인사관리
                             </span>
                             <ul className={`submenu ${openMenu === 2 ? 'show' : ''}`}>
-                                <li><Link to="/employee">직원관리</Link></li>
-                                <li>사용자등록</li>
-                                <li>급여기초정보입력</li>
-                                <li>급여자료입력</li>
+                                <li><Link to="/employee">직원 관리</Link></li>
+                                <li><Link to="/member">직원 등록</Link></li>
+                                <li>급여 기초정보 입력</li>
+                                <li>급여자료 입력</li>
                                 <li>급여대장</li>
                                 <li>인센티브 관리</li>
                             </ul>
