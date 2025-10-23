@@ -1,4 +1,5 @@
-# Logs
+# ----------------------
+# 🔹 Logs
 logs
 *.log
 npm-debug.log*
@@ -7,26 +8,61 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ----------------------
+# 🔹 Dependency directories
+node_modules/
+node_modules/*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
-# Editor directories and files
+# ----------------------
+# 🔹 Build outputs
+dist/
+dist-ssr/
+*.local
+*.cache
+*.temp
+.vite/
+build/
+out/
+
+# ----------------------
+# 🔹 Environment files
+.env
+.env.*
+!.env.example
+
+# ----------------------
+# 🔹 Editor / OS files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.orig
 
-# Maven / Gradle
+# ----------------------
+# 🔹 Miscellaneous
+*.bak
+*.tmp
+*.log.*
+coverage/
+*.zip
+*.tar
+*.tgz
+
+# ----------------------
+# 🔹 Maven / Gradle (백엔드 혼합 방지)
 target/
 .idea/
 *.iml
 
-# 환경파일
+# ----------------------
+# 🔹 Local resources or secrets
 src/main/resources/application.yml
